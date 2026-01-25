@@ -1,0 +1,25 @@
+                                                                                        SOC L1 Alert Triage — Task-Wise Answers
+
+Task 1 — Introduction
+• No answer required
+
+Task 2 — Events and Alerts
+• Number of alerts on SOC dashboard: 5
+• Name of the most recent alert: Double-Extension File Creation
+
+Task 3 — Alert Properties
+• Verdict for “Unusual VPN Login Location”: False Positive
+• User mentioned in that alert: M.Clark
+
+Task 4 — Alert Prioritisation
+• Should you prioritise medium over low severity first? Yea
+• Should you take newest alerts before older? Nay
+• Name of first-priority alert you assign yourself: Potential Data Exfiltration
+
+Task 5 — Alert Triage
+• Flag received after triaging first-priority alert: THM{looks_like_lots_of_zoom_meetings}
+• Flag after triaging second-priority alert: THM{how_could_this_user_fall_for_it?}
+• Flag after triaging third-priority alert: THM{should_we_allow_github_for_devs?}
+
+Task 6 — Conclusion
+• No answers; completion confirmation
