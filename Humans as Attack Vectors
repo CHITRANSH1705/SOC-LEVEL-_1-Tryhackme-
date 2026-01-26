@@ -1,0 +1,28 @@
+                                                                                    Humans as Attack Vectors — Task-Wise Answers
+
+Task 1 — Introduction
+• No answers required (just context/setup)
+
+Task 2 — The Human Element
+
+What or who is the weakest link in cyber security? → Humans
+
+What do attackers seek when targeting humans in a cyberattack? → Access
+
+Task 3 — Attacks on Humans
+
+What is the name of an attack tactic that manipulates human psychology? → Social Engineering
+
+Which social engineering method is about pretending to be someone else? → Impersonation
+
+Task 4 — Defending Humans
+
+Which process is aimed at preventing or reducing the chance of an attack? → Mitigation
+
+Task 5 — (If there are practice flags)
+The simple Medium version by Aaron didn’t list flags, but other walkthroughs (like Chaitanya Garware’s) include flags:
+• Flag for “Employees at Risk” challenge: THM{anyone_else_at_risk?}
+• Flag for “Security Policy” challenge: THM{human_protection_expert!}
+
+Task 6 — Conclusion
+• No answers required (completion message)
