@@ -1,0 +1,27 @@
+                                                                                          Introduction to EDR — Task-Wise Answers
+
+Task 2 – What is an EDR?
+• Feature giving full context: Visibility
+• Process that spawned sc.exe: cmd.exe
+
+Task 3 – Beyond the Antivirus
+• Analogy for AV: Immigration Check
+• Hijacked legitimate process: svchost.exe
+• Solution that might mark this as clean: Antivirus
+
+Task 4 – How an EDR works?
+• EDR component collecting telemetry: Agent
+• EDR agent also known as: Sensor
+
+Task 5 – EDR Telemetry
+• Telemetry for detecting C2: Network Connections
+• Windows configuration stored in: Registry
+
+Task 6 – Detection and Response Capabilities
+• Feature that identifies malicious behaviours: IOC Matching
+
+Task 7 – Investigate an Alert on EDR
+• Tool launched by CMD.exe: CURL.exe
+• Path to downloaded malware: C:\Users\Public\install.exe
+• Path of suspicious syncsvc.exe: C:\Users\haris.khan\AppData\Local\Temp\syncsvc.exe
+• URL for exfiltration attempt: https://files-wetransfer.com/upload/session/ab12cd34ef56/dump_2025.dmp
