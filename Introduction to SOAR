@@ -1,0 +1,15 @@
+                                                                              Introduction to SOAR — Task-Wise Answers
+
+Task 2 — Traditional SOC and Challenges
+• How would you describe the experience of an overload of security events being triggered within a SOC? → Alert Fatigue
+
+Task 3 — Overcoming SOC Challenges with SOAR
+• The act of connecting and integrating security tools and systems into seamless workflows is known as? → Orchestration
+• What do we call a predefined list of actions to handle an incident? → Playbook
+
+Task 4 — Building SOAR Playbooks
+• Is manual analysis vital within a SOAR workflow? (Yay/Nay) → Yay
+• From where is the CVE Patching playbook fetching the new CVEs? → Advisory lists
+
+Task 5 — Threat Intel Workflow Practical
+• Flag received for completing the SOAR automation task: → THM{AUT0M@T1N6_S3CUR1T¥}
