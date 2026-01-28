@@ -1,0 +1,13 @@
+                                                                MITRE Walkthrough Notes — Task-Wise Answers
+
+Task 2 — ATT&CK® Framework
+• Tactic that Hide Artifacts belongs to: Defense Evasion
+• ID for Create Account technique: T1136
+
+Task 3 — ATT&CK in Operation
+• Country where Mustang Panda is based: China
+• ATT&CK technique ID for Mustang Panda’s reconnaissance: T1598
+• Software Mustang Panda uses for access token manipulation: Cobalt Strike
+
+Task 4 — ATT&CK for Threat Intelligence
+• APT group active since at least 2013 targeting aviation: APT3
