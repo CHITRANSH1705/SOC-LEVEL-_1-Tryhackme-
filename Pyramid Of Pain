@@ -10,7 +10,7 @@ Task 3 — IP Address (Easy)
 Task 4 — Domain Names (Simple)
 • Term referring to an address used to access websites: Domain Name
 • Name of attack using Unicode to imitate a known domain: Punycode attack
-• Redirected website for the shortened URL https://tinyurl.com/bw7t8p4u: (not given here — you’ll get it by testing in practice)
+• Redirected website for the shortened URL https://tinyurl.com/bw7t8p4u: https://tryhackme.com/
 
 Task 5 — Host Artifacts (Annoying)
 • IP address contacted by process regidle.exe: 96.126.101.6
