@@ -1,0 +1,21 @@
+                                                                Elastic Stack: The Basics — Task-Wise Answers
+
+Task 2 — Elastic Stack Overview
+• Logstash is used to visualize the data. (yay / nay) → nay
+• Elasticstash supports all data formats apart from JSON. (yay / nay) → nay
+
+Task 4 — Discover Tab
+• How many hits are returned for vpn_connections from 31st Dec 2021 to 2nd Feb 2022? → 2861
+• Which IP address has the maximum number of connections? → 238.163.231.224
+• Which user is responsible for the overall maximum traffic? → James
+• Apply filter on UserName “Emanda”; which SourceIP has max hits? → 107.14.1.247
+• On 11th Jan, which IP caused the spike observed in the time chart? → 172.201.60.191
+• How many connections were observed from IP 238.163.231.224, excluding the New York state? → 48
+
+Task 5 — KQL Overview
+• How many records match the KQL query (United States and James or Albert)? → 161
+• After termination on Jan 1, how many VPN connections for Johny Brown (built)? → 1
+
+Task 6 — Creating Visualizations
+• Which user was observed with the greatest number of failed attempts? → Simon
+• How many wrong VPN connection attempts were observed in January? → 274
