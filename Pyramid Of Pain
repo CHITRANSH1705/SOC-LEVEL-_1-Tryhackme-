@@ -1,0 +1,33 @@
+                                                                                  Pyramid Of Pain — Task-Wise Answers
+
+Task 2 — Hash Values (Trivial)
+• Filename of the sample for hash b8ef959a9176aef07fdca8705254a163b50b49a17217a4ff0107487f59d4a35d: Sales_Receipt 5606.xls
+
+Task 3 — IP Address (Easy)
+• First IP the malicious process (PID 1632) tries to communicate with: 50.87.136.52
+• First domain name the malicious process communicates with: craftingalegacy.com
+
+Task 4 — Domain Names (Simple)
+• Term referring to an address used to access websites: Domain Name
+• Name of attack using Unicode to imitate a known domain: Punycode attack
+• Redirected website for the shortened URL https://tinyurl.com/bw7t8p4u: (not given here — you’ll get it by testing in practice)
+
+Task 5 — Host Artifacts (Annoying)
+• IP address contacted by process regidle.exe: 96.126.101.6
+• Name of the malicious executable dropped: G_jugk.exe
+• Number of vendors that mark the host malicious: 9
+
+Task 6 — Network Artifacts (Annoying)
+• Browser from User-Agent string shown: Internet Explorer
+• Number of POST requests shown: 6
+
+Task 7 — Tools (Challenging)
+• Method used to determine similarity between files: Fuzzy Hashing
+• Alternative name for fuzzy hashes: context triggered piecewise hashes
+
+Task 8 — TTPs (Tough)
+• Number of techniques in the Exfiltration category on MITRE ATT&CK: 9
+• Name of commercial remote access tool used for C2 by Chimera: Cobalt Strike
+
+Task 9 — Practical: The Pyramid of Pain
+• Flag after completing the static site task: THM{PYRAMIDS_COMPLETE}
