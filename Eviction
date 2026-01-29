@@ -1,0 +1,23 @@
+                                                                                        Eviction — Task-Wise Answers
+
+Task 1 – Understand the Adversary
+
+Technique used by the APT to both perform recon and gain initial access: Spearphishing Link
+
+Which accounts might the APT compromise while developing resources: Email Account
+
+Two techniques of user execution to look for: Malicious File and Malicious Link
+
+Which scripting interpreters to search for successful execution: PowerShell and Windows Command Shell
+
+Which registry keys to observe for persistence: Registry Run Keys
+
+Which system binary execution to scrutinize for proxy execution: Rundll32
+
+Which technique might be indicated by finding tcpdump: Network Sniffing
+
+Which remote services to observe for lateral movement: SMB/Windows Admin Shares
+
+Likely target information repository: SharePoint
+
+Types of proxy the APT might use for data exfiltration: External Proxy and Multi-hop Proxy
