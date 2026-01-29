@@ -1,0 +1,19 @@
+                                                                                          Summit — Task-Wise Answers
+
+Task 1 — First flag (detecting sample1.exe)
+• THM{f3cbf08151a11a6a331db9c6cf5f4fe4}
+
+Task 2 — Second flag (detecting sample2.exe)
+• THM{2ff48a3421a938b388418be273f4806d}
+
+Task 3 — Third flag (detecting sample3.exe)
+• THM{4eca9e2f61a19ecd5df34c788e7dce16}
+
+Task 4 — Fourth flag (detecting sample4.exe)
+• THM{c956f455fc076aea829799c0876ee399}
+
+Task 5 — Fifth flag (detecting sample5.exe)
+• THM{46b21c4410e47dc5729ceadef0fc722e}
+
+Final Flag — Last flag from Sphinx (final detection)
+• THM{c8951b2ad24bbcbac60c16cf2c83d92c}
