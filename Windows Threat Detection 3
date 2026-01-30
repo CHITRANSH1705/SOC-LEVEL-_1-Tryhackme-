@@ -1,0 +1,9 @@
+                                                                      Windows Threat Detection 3 — Task-Wise Answers
+
+Task 2 — Command and Control
+• Which suspicious archive did the user download? → URGENT!.zip
+• Where did the attackers hide the C2 malware file? → C:\Users\Administrator\AppData\Roaming\update.exe
+• What is the domain of the Command and Control server? → route.m365officesync.workers.dev
+
+Task 3 — Persistence Overview
+• How many times did the threat actor fail to log in to the Administrator? → 6
