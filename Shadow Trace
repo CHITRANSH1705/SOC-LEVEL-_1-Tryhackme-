@@ -1,0 +1,26 @@
+                                                        Shadow Trace — Task-Wise Answers
+
+Task 1 — Scenario
+• No answer required (intro only).
+
+Task 2 — File Analysis
+
+Architecture of windows-update.exe: 64-bit
+
+SHA-256 hash of windows-update.exe: B2A88DE3E3BCFAE4A4B38FA36E884C586B5CB2C2C283E71FBA59EFDB9EA64BFC
+
+URL within the file (IOC): http://tryhatme.com/update/security-update.exe
+
+Domain for IOC: responses.tryhatme.com
+
+Decoded flag from the suspicious domain: THM{you_g0t_some_IOCs_friend}
+
+Library related to socket communication: WS2_32.dll
+
+Task 3 — Alerts Analysis
+
+Malicious URL triggered by powershell.exe: https://tryhatme.com/dev/main.exe
+
+Malicious URL from chrome.exe alert: https://reallysecureupdate.tryhatme.com/update.exe
+
+Name of the file saved in the alert triggered by chrome.exe: test.txt
