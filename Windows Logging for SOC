@@ -1,0 +1,27 @@
+                                    Windows Logging for SOC — Task-Wise Answers
+
+Task 2 — Security Log: Authentication
+• Successful login event ID: Security / 4624
+• IP that performed RDP brute force: 10.10.53.248
+• User breached as a result: Administrator
+• Logon ID for the malicious RDP login (Logon Type 10): 0x183C36D
+
+Task 3 — Security Log: User Management
+• User created shortly after RDP login: svc_sysrestore
+• Privileged groups the backdoor user was added to (alphabetical): Backup Operators, Remote Desktop Users
+• Does the Logon ID match the previous task? Yea
+
+Task 4 — Sysmon: Process Monitoring
+• Web browser used by Sarah: Google Chrome
+• File Sarah downloaded: C:\Users\sarah.miller\Downloads\ckjg.exe
+• URL where the file was downloaded from: http://gettsveriff.com/bgj3/ckjg.exe
+
+Task 5 — Sysmon: Files and Network
+• File created by downloaded malware for persistence: C:\Users\sarah.miller\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\DeleteApp.url
+• Command & Control server (IP:Port): 193.46.217.4:7777
+• Domain corresponding to malicious IP: hkfasfsafg.click
+
+Task 6 — PowerShell Logging
+• First PowerShell command executed by Administrator: Get-ComputerInfo
+• Date the first PowerShell command was run: May 18, 2025
+• Flag found in PowerShell history: THM{it_was_me!}
