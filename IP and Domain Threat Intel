@@ -1,0 +1,26 @@
+                                                              IP and Domain Threat Intel — Task-Wise Answers
+
+Task 2 — IP Lookup
+• Which IP was flagged as malicious? → 10.13.37.209
+• Hostname associated with that malicious IP: → skylark-services.com
+• Country of the malicious IP address: → United States
+• Autonomous System Number (ASN) of that IP: → AS14061
+
+Task 3 — Domain Investigation (Passive)
+• Suspicious domain from the logs: → adminportal-secure.com
+• Registrar of that domain: → NameCheap, Inc.
+• Registrant’s country: → Canada
+• Domain age (years): → 2
+
+Task 4 — Active Domain Findings
+• Which service was identified at the domain: → SSH
+• Port used by that service: → 22
+• Subdomain that hosted the malicious content: → update.adminportal-secure.com
+• IP address resolved by that subdomain: → 104.243.78.156
+• Flag after correlating the IP and domain: → THM{intel_master_detected}
+
+Task 5 — Threat Correlation
+• Which third-party threat intel source labeled it “High Risk”? → AbuseIPDB
+• Which protocol was most used in connection logs? → HTTPS
+• Name of the malware family inferred by correlation: → RATX-Stealer
+• Flag for completing threat correlation: → THM{correlated_and_blocked}
