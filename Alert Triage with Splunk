@@ -1,0 +1,42 @@
+                                                                            Alert Triage with Splunk — Task-Wise Answers
+
+Task 2 — Initial Alert Triage
+• Which alert did you investigate first (highest severity)? → Unusual Base64 Encoded PowerShell
+• User associated with this alert: → svc_webapp
+• Source IP seen in the alert: → 10.10.142.11
+• Destination domain contacted: → malicious-data.exfil.net
+
+Task 3 — Threshold Rules & Splunk Queries
+• Which Splunk search detected brute force activity?
+
+index=wineventlog sourcetype=WinEventLog:Security EventCode=4625 | stats count by src_ip
+
+
+• What threshold rule triggered the alert?
+→ More than 5 failed login attempts within 10 minutes
+• Flag gained after this alert: → THM{split_the_failures}
+
+Task 4 — Pivoting on User Activity
+• Next suspicious alert type: → Suspicious Scheduled Task Creation
+• User executing the scheduled task: → svc_backup
+• Task name seen in event logs: → AutoUpdateJob
+• Flag gained after investigating scheduled task: → THM{scheduled_but_not_safe}
+
+Task 5 — Detecting Pivoting Activity
+• Which evidence showed lateral movement?
+→ Remote execution of psexec.exe from host A to host B
+• Command line used in the lateral activity:
+
+psexec.exe \\10.10.142.12 -u administrator -p P@ssw0rd cmd.exe
+
+
+• Flag gained after this task: → THM{moving_through_the_network}
+
+Task 6 — Final Correlation
+• Splunk query showing both brute force + task creation:
+
+index=wineventlog (EventCode=4625 OR EventCode=4698) | stats count by src_ip, user
+
+
+• Final flag for completing alert triage with correlation:
+→ THM{splunk_alert_mastery}
