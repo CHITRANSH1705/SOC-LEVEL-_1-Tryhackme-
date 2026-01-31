@@ -1,0 +1,21 @@
+                                                                              Living Off The Land Attacks — Task-Wise Answers
+
+Task 1 — Introduction
+• No answers required (intro only)
+
+🧠 Task 2 — What are Living off the Land (LOTL) attacks?
+
+• What does LOTL stand for? → Living off the Land
+• Primary goal of LOTL attacks: Use legitimate tools for malicious purposes
+(both answers are conceptual from the writeup)
+
+🔍 Task 3 — Examining LOTL Tools
+
+• Which Windows tool was used to list services? → sc.exe
+• Which Windows tool was used to run PowerShell commands? → powershell.exe
+• Which Windows tool was used to schedule tasks? → schtasks.exe
+
+⚠️ Task 4 — Practical Flags
+
+• Flag for completing the “Bootstrapping Persistence” task: → THM{lol_attacks_start_easy}
+• Flag for completing the “Living Off The Land in Action” task: → THM{use_whatever_is_available}
