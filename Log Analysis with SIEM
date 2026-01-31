@@ -1,0 +1,27 @@
+                                                                                Log Analysis with SIEM — Task-Wise Answers
+
+Task 2 — Security Logs Overview
+• Which event ID indicates a failed login due to a bad password? → 4625
+• Which account experienced the failed login? → svc_backup
+• IP address causing the failed login attempts: → 10.10.14.72
+• Which successful login event type indicated a remote session? → Logon Type 10
+
+Task 3 — Process Creation and Monitoring
+• Event ID that tracks process creation: → 1
+• Which executable was most frequently spawned by malware? → powershell.exe
+• Command line used to run the defensive script:
+
+powershell.exe -WindowStyle Hidden -NoProfile -Command Get-WinEvent -FilterHashtable @{LogName="Security";ID=4624,4625}
+
+
+Task 4 — Web Server Logs
+• Which HTTP method was showing suspicious POSTs: → POST
+• User-agent string used in suspicious web access: → Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+• Which URL path was hit repeatedly by the malicious client: → /admin/login.php
+• Response code indicating login failure: → 401
+
+Task 5 — SIEM Correlation Rule
+• Which correlation rule flagged multiple alerts together: → Multiple failed logins followed by privilege elevation events
+• What condition triggered the high severity SIEM alert:
+→ More than 5 failed logins from same IP in 10 mins + escalation
+• Flag for completing the correlation challenge: → THM{siem_win_master}
