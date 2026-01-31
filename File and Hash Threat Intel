@@ -1,0 +1,44 @@
+                                                                              File and Hash Threat Intel — Task-Wise Answers
+
+Task 2 — Filenames and Paths
+• Which file displays a heuristic indicator and what is the indicator? → payroll.pdf, Double extensions
+
+Task 3 — File Hash Lookup
+• SHA256 hash of the file bl0gger:
+→ 2672B6688D7B32A90F9153D2FF607D6801E6CBDE61F509ED36D0450745998D58
+• Threat label used on VirusTotal for this malicious file:
+→ trojan.graftor/flystudio
+• When was the file first submitted for analysis?
+→ 2025-05-15 12:03:49
+• Vendor classifying Morse-Code-Analyzer as non-malicious on MalwareBazaar:
+→ CyberFortress
+• MITRE technique flagged for persistence/privilege escalation on VirusTotal:
+→ DLL Side-Loading
+
+Task 4 — Sandbox Analysis
+• Tags used to identify bl0gger.exe on Hybrid Analysis:
+→ BlackMoon, Discovery, windows-server-utility
+• Stealth command line executed by the file:
+→ regsvr32 %WINDIR%\Media\ActiveX.ocx /s
+• Other process spawned according to the process tree:
+→ werfault.exe
+• Which known Windows file does payroll.pdf masquerade as?
+→ svchost.exe
+• Associated URL linked to the file:
+→ hxxp://121.182.174.27:3000/server.exe
+• How many extracted strings were identified from the sandbox analysis:
+→ 454
+
+Task 5 — Threat Intelligence Challenge
+• SHA256 hash of the challenge file:
+→ 43B0AC119FF957BB209D86EC206EA1EC3C51DD87BEBF7B4A649C7E6C7F3756E7
+• Family labels assigned to the file on VirusTotal:
+→ akira, filecryptor
+• Number of security vendors that flagged the file as malicious:
+→ 61
+• Name of the text file dropped during execution:
+→ akira_readme.txt
+• PowerShell script observed to be executed:
+→ Get-WmiObject Win32_Shadowcopy | Remove-WmiObject
+• MITRE ATT&CK ID associated with this command:
+→ T1490
