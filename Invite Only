@@ -1,0 +1,31 @@
+                                                                                          Invite Only — Task-Wise Answers
+
+Task 1 — Flagged SHA256 file name
+• syshelpers.exe
+
+Task 2 — File type of the flagged SHA256 hash
+• Win32 EXE
+
+Task 3 — Execution parents of the flagged hash (chronological)
+• 361GJX7J, installer.exe
+
+Task 4 — Name of the file being dropped
+• Aclient.exe
+
+Task 5 — Four malicious dropped files (in order)
+• searchhost.exe, syshelpers.exe, nat.vbs, runsys.vbs
+
+Task 6 — Malware family linking these files
+• AsyncRAT
+
+Task 7 — Title of the original report where the indicators are mentioned
+• From Trust to Threat: Hijacked Discord Invites Used for Multi-Stage Malware Delivery
+
+Task 8 — Tool used to steal cookies from Chrome browser
+• ChromeKatz
+
+Task 9 — Phishing technique used by the attackers
+• ClickFix
+
+Task 10 — Name of platform used to redirect to malicious servers
+• Discord
