@@ -1,0 +1,32 @@
+                                                                                Linux Logging for SOC — Task-Wise Answers
+
+Task 2 — SSH and Authentication Logs
+• Which event indicates a failed SSH authentication? → sshd: Failed password
+• Username used in the failed SSH attempt: → sysadmin
+• IP address that performed the failed login: → 10.10.20.105
+• Which SSH event indicates a successful login? → Accepted password
+
+Task 3 — Sudo and Privilege Use
+• User who used sudo to list root processes: → analyst
+• Which command did they run with sudo? → ps aux | grep root
+• Flag found in sudo logs: → THM{sudo_alert_detected}
+
+Task 4 — System Logs — Daemon Activity
+• Service that restarted unexpectedly: → cron
+• Time of the unexpected restart (syslog timestamp): → 2025-09-18 03:21:15
+• Reason for restart (based on log message): → segfault (core dumped)
+
+Task 5 — Kernel and Audit Logs
+• Which kernel log entry shows process termination by OOM killer? → Killed process 1826 (malware)
+• PID of the terminated process: → 1826
+• Rule that triggered the audit log entry: → audit: execve
+• Flag in audit logs: → THM{audit_exec_detected}
+
+Task 6 — Log Correlation
+• SIEM search that correlated SSH and sudo activity:
+
+index=syslog OR index=audit | stats count by host, user
+
+
+• What anomaly did the correlation reveal? → Failed SSH attempts from 10.10.20.105 followed by analyst using sudo soon after
+• Final flag for completing the room: → THM{linux_log_master}
