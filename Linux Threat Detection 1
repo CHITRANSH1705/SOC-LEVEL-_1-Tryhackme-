@@ -1,0 +1,31 @@
+                                                                                        Linux Threat Detection 1 — Task-Wise Answers
+
+Task 2 — Baseline Activity
+• Which system process generated the first suspicious log entry? → cron
+• What type of activity did cron trigger? → unexpected script execution
+• Script name associated with the anomaly: → daily_backup.sh
+
+Task 3 — Process Monitoring
+• Which process was spawned with root privileges unexpectedly? → malware_runner
+• Parent process of the suspicious execution: → sshd
+• User who initiated this activity: → guest
+• Timestamp of the execution (syslog): → 2025-09-20 07:13:09
+
+Task 4 — Logging & Authentication
+• Type of SSH authentication failure seen in logs: → invalid user
+• Username used in the invalid login attempt: → testuser
+• IP address tied to this failed login event: → 10.10.30.22
+
+Task 5 — System Audit Logs
+• Which audit rule reported the abnormal execution? → audit: execve
+• What was the audit result code for the event: → failure (EACCES)
+• Flag found in the audit output: → THM{audit_shows_truth}
+
+Task 6 — Log Correlation
+• Log search that correlated process execution + failed SSH attempts:
+
+index=syslog OR index=audit | stats count by exe, user, src_ip
+
+
+• What suspicious pattern did the correlation reveal? → guest logged in via SSH from 10.10.30.22 and immediately spawned malware_runner
+• Final flag for completing the room: → THM{linux_threat_detected}
