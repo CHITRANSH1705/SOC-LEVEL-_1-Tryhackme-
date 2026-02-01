@@ -1,0 +1,36 @@
+                                                                                              Benign — Task-Wise Answers
+
+Task 1 — Introduction
+• No answer needed (just setup)
+
+Task 2 — Scenario: Identify and Investigate an Infected Host
+
+2.1 How many logs are ingested from the month of March 2022?
+• 13959
+
+2.2 Imposter Alert: What is the name of the imposter user?
+• Amel1a
+
+2.3 Which user from the HR department was observed to be running scheduled tasks?
+• Chris.fort
+
+2.4 Which user from the HR department executed a system process (LOLBIN) to download a payload from a file-sharing host?
+• Haroon
+
+2.5 To bypass the security controls, which system process (lolbin) was used to download a payload from the internet?
+• certutil.exe
+
+2.6 What was the date that this binary was executed? (YYYY-MM-DD)
+• 2022-03-04
+
+2.7 Which third-party site was accessed to download the malicious payload?
+• controlc.com
+
+2.8 What is the name of the file that was saved on the host machine from the C2 server?
+• benign.exe
+
+2.9 The suspicious file contained malicious content with the pattern THM{……….}; what is that pattern?
+• *THM{KJ&H^B0}
+
+2.10 What is the full URL that the infected host connected to?
+• https://controlc.com/e4d11035
