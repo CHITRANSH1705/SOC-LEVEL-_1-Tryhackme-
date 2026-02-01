@@ -1,0 +1,34 @@
+                                                                                              ItsyBitsy — Task-Wise Answers
+Task 2 — Burp Suite Basics
+
+• Type of HTTP method used in the first request: → POST
+• Parameter that carried the username value: → username
+• Parameter that carried the password value: → password
+
+Task 3 — The ItsyBitsy Spider
+
+• Source of the username list for brute force: → rockyou.txt
+• Number of total login attempts needed: → 98
+• Valid credential found:
+→ itsytan:Spider123
+
+Task 4 — Brute Forcing Password
+
+• Tool used to test credentials: → Hydra
+• Module/protocol used for brute forcing: → http-post-form
+
+Task 5 — Shell Access
+
+• Command to get a shell as www-data:
+
+sudo -u www-data bash
+
+Task 6 — Privilege Escalation
+
+• File that provided SUID binary: → its_delete
+• Final flag path:
+
+/root/its_bitsy_flag.txt
+
+
+• Contents of the root flag: → THM{its_bitsy_spider_caught}
