@@ -1,0 +1,27 @@
+                                                                                        Threat Detection 3 — Task-Wise Answers
+
+Task 2 — Bruteforce & Detection
+• Which attack technique caused a brute-force alert? → Repeated SSH logon failures
+• Username targeted in brute force: → svc_user
+• IP with repeated login failures: → 10.10.56.12
+• Event ID associated with login failure: → 4625
+
+Task 3 — Malware Process Monitoring
+• Which process was observed spawning network activity suspiciously? → malproc
+• Parent process of suspicious binary: → systemd
+• Which port did the suspicious process use mainly? → 8080
+
+Task 4 — Network Beaconing
+• Most frequent destination domain seen in outbound connections: → beacon.badhost.org
+• Which protocol was used for outbound C2 beaconing: → HTTP
+• Most common response code from C2 server: → 200
+
+Task 5 — Correlation & Alerting
+• Which correlation rule joined failed login + malware execution?
+
+index=security OR index=sysmon | stats count by src_ip, exe
+
+
+• What anomalous pattern was revealed:
+→ Failed SSH attempts from IP followed by suspicious malproc on same host
+• Flag for completing the room: → THM{threat_detected_3_master}
