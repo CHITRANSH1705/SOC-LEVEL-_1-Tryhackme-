@@ -1,0 +1,32 @@
+                                                                              Linux Threat Detection 2 — Task-Wise Answers
+
+Task 2 — Interactive Log Review
+• Which user account failed to authenticate multiple times? → svcweb
+• IP address associated with repeated login failures: → 10.10.74.19
+• Name of the service that logged the failures: → sshd
+
+Task 3 — Process Creation Monitoring
+• Executable spawned suspiciously with a random name: → updsvc
+• Parent process name for the suspicious exe: → bash
+• User that executed the suspicious process: → analyst
+• What was the timestamp of the suspicious process creation? → 2025-10-08 14:22:09
+
+Task 4 — Network Connection Inspection
+• Which port saw a high number of outbound connections? → 4444
+• What was the most common destination IP in these connections: → 203.0.113.225
+• Protocol for the outbound connections: → TCP
+
+Task 5 — Audit and Kernel Logs
+• Which audit rule matched the suspicious execution: → audit: execve
+• Which kernel log showed a segmentation violation: → kernel: segfault at …
+• Flag found within the audit trace output: → THM{audit_exposes_hidden}
+
+Task 6 — Log Correlation and Final Flag
+• Query that correlated audit + SSH logs:
+
+index=syslog OR index=audit | stats count by exe, user, src_ip
+
+
+• Anomalous pattern identified:
+→ svcweb failing SSH then updsvc spawned by analyst soon after
+• Final room flag: → THM{linux_threat_detected_pro}
