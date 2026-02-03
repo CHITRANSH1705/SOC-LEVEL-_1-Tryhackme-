@@ -1,0 +1,28 @@
+Detecting Web Attacks — Task-Wise Answers
+Task 2 — Web Attack Basics
+
+• What kind of web attack involves overwhelming a web server with requests? → DDoS
+• Which attack technique tries to inject SQL into queries? → SQL Injection
+• What is the name for tricking a site by sending unexpected input? → Input Validation Attack
+
+Task 3 — Analyzing Logs
+
+• What field in the logs shows a suspicious number of failed login attempts? → status (e.g., 401/403)
+• Which IP made the most failed requests? → 198.51.100.23
+• Which URI saw the most suspicious traffic? → /wp-login.php
+
+Task 4 — SQL Injection Detection
+
+• What suspicious pattern indicates SQL injection attempts? → ' OR '1'='1
+• Which parameter was targeted with SQLi patterns? → username
+
+Task 5 — Cross-Site Scripting (XSS)
+
+• What attack vector typically uses <script> tags to inject JS? → XSS
+• Which field in logs showed reflected input? → query string
+
+Task 6 — Brute Force Detection
+
+• Which IP was responsible for repeated POST attempts? → 203.0.113.45
+• How many repeated login attempts triggered an alert? → 12
+• Flag from brute force task: → THM{BRUTE_FORCE_DETECTED}
