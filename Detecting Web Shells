@@ -1,0 +1,25 @@
+Detecting Web Shells — Task-Wise Answers
+
+Task 2 — Web Shell Overview
+• Which MITRE ATT&CK Persistence sub-technique are web shells associated with? → T1505.003
+• What file extension is commonly used for web shells targeting Microsoft Exchange? → .aspx
+
+Task 3 — Anatomy of a Web Shell
+• Account you have access to on the web shell (whoami) → www-data
+• Flag found by listing the directory and reading the flag file → THM{W3b_Sh3ll_Usag3}
+
+Task 4 — Log-Based Detection
+• Part of the URL that associates values to parameters (indicator of web shell activity) → query strings
+• Auditd syscall that confirms a file was written to disk after a suspicious POST → creat
+
+Task 5 — Beyond Logs / File System Analysis
+• Command to locate PHP files in the /var/www/ directory → find /var/www/ -type f -name "*.php"
+• (Optional — network analysis example in some walkthroughs:) Wireshark filter for PUT requests → http.request.method == "PUT"
+
+Task 6 — Investigation
+• Which IP address likely belongs to the attacker? → 203.0.113.66
+• First directory the attacker discovered → /wordpress
+• Name of the .php file the attacker used to upload the web shell → upload_form.php
+• First command run by the attacker via the web shell → whoami
+• Second file downloaded by the attacker after web shell access → linpeas.sh
+• Flag hidden within the web shell itself → THM{W3b_Sh3ll_Int3rnals}
