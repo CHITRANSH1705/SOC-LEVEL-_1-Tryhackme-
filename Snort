@@ -1,0 +1,44 @@
+Snort — SOC Level 1 — Task-Wise Answers
+Task 2 — Interactive Material and VM
+
+2.1 Output of running .easy.sh:
+• Too Easy!
+
+Task 3 — Introduction to IDS/IPS
+
+3.1 Snort mode to stop threats on a local machine: → HIPS
+3.2 Snort mode to detect threats on a local network: → NIDS
+3.3 Snort mode to detect threats on a local machine: → HIDS
+3.4 Mode to stop threats on a local network (behaviour method): → NBA
+3.5 Snort mode similar to NIPS mode: → NIPS
+3.6 Official description calls Snort as: → full-blown (as in full-blown NIPS)
+3.7 NBA training period is known as: → Baselining
+
+Task 4 — Build and Rule Count
+
+4.1 Snort Build number (from snort -V): → 149
+4.2 Number of rules read with /etc/snort/snort.conf: → 4151
+4.3 Number of rules read with /etc/snort/snortv2.conf: → 1
+
+Task 6 — Packet Logger Mode
+
+6.1 Source port used to connect to port 53: → 3009
+6.2 IP ID of the 10th packet in snort.log.1640048004: → 49313
+6.3 Referer of the 4th packet in snort.log.1640048004: → http://www.ethereal.com/development.html
+
+Task 7 — Operating Modes & HTTP Methods
+
+7.1 Number of detected HTTP GET methods: → 2
+
+Task 8 — PCAP Investigation
+
+8.1 Number of alerts generated for mx-1.pcap: → 170
+8.2 Number of TCP segments queued: → 18
+8.3 Number of HTTP response headers extracted: → <not explicitly listed in article snippet; presumed part of walkthrough detail beyond answer-list scope>
+
+Task 9 — Custom Rule Detections
+
+9.1 Request name of packet with IP ID 35369: → Timestamp Request
+9.2 Number of packets with SYN flag: → 1
+9.3 Number of packets with Push-Ack flags: → 216
+9.4 Number of packets with same source and destination IP: → Answer context was explained but not provided explicitly in text snippet (walkthrough variable); check in VM logs.
