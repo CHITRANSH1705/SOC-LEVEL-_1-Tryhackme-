@@ -31,5 +31,4 @@ net localgroup “Remote Desktop Users” svc_backup /add
 net group “Domain Admins” /domain
 • What archive did the attacker create? → finance_it_archive.rar
 
-Task 6 — Conclusion
-• No a
+
