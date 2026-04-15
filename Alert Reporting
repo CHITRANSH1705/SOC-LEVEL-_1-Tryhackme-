@@ -3,6 +3,7 @@
 Task 1 
 No Answer Needed
 Task 2 — Alert Funnel
+
 • What is the process of passing suspicious alerts to an L2 analyst for review? → Alert Escalation
 • What is the process of formally describing alert details and findings? → Alert Reporting
 
@@ -21,4 +22,4 @@ Task 5 — SOC Communication
 • Should you immediately contact your L2 if you think you missed the attack (Yea/Nay)? → Yea
 
 Task 6 — Conclusion
-• No answer required
+• No answer 
