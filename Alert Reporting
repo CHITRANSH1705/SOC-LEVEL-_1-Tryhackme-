@@ -20,6 +20,7 @@ Task 4 — Escalation Guide
 • Who is your current L2 in the SOC dashboard? → E.Fleming
 • What flag did you receive after correctly escalating the alert? → THM{looks_like_webshell_via_old_exchange}
 
+
 Task 5 — SOC Communication
 • Should you first try to contact your manager in case of a critical threat (Yea/Nay)? → Nay
 • Should you immediately contact your L2 if you think you missed the attack (Yea/Nay)? → Yea
