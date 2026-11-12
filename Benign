@@ -14,6 +14,7 @@ Task 2 — Scenario: Identify and Investigate an Infected Host
 2.3 Which user from the HR department was observed to be running scheduled tasks?
 • Chris.fort
 
+
 2.4 Which user from the HR department executed a system process (LOLBIN) to download a payload from a file-sharing host?
 • Haroon
 
