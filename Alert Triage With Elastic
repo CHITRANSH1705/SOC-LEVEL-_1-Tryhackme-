@@ -12,6 +12,8 @@ Task 2 — Scenario Briefing
 
 Task 3 — Investigating Web Attacks
 
+
+
 • How many POST requests did the IP 203.0.113.55 make to proxyLogon.ecp? → 3
 • Which user.agent made those POST requests? → python-requests/2.25.1
 • How many logs contain the cmd= parameter in the url.path field? → 20
