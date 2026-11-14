@@ -8,6 +8,8 @@ Task 2 — Scenario Briefing
 • How many logs are available for analysis within the entire time range? → 1467
 • What is the field value for the client.ip in the weblogs index? → 203.0.113.55
 
+
+
 Task 3 — Investigating Web Attacks
 
 • How many POST requests did the IP 203.0.113.55 make to proxyLogon.ecp? → 3
