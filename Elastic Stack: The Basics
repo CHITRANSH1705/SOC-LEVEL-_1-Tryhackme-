@@ -5,6 +5,8 @@ Task 2 — Elastic Stack Overview
 • Elasticstash supports all data formats apart from JSON. (yay / nay) → nay
 
 
+
+
 Task 4 — Discover Tab
 • How many hits are returned for vpn_connections from 31st Dec 2021 to 2nd Feb 2022? → 2861
 • Which IP address has the maximum number of connections? → 238.163.231.224
